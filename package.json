@@ -1,9 +1,9 @@
 {
   "name": "my-personal-notes-ayyub-muhammad",
   "version": "0.1.0",
+  "homepage": "https://id-yuu.github.io/notes-react/",
   "private": true,
   "type": "module",
-  "homepage": "https://id-yuu.github.io/notes-react/",
   "scripts": {
     "predeploy" : "npm run build",
     "deploy" : "gh-pages -d build",
