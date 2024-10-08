@@ -5,16 +5,16 @@ import SectionForm from "./SectionForm";
 import { getInitialData } from "../utils";
 
 function Pages() {
-  const [datas, setDatas] = useState(getInitialData());
+  const [datas, setDatas] = useState(getInitialData);
   const [search, setSearch] = useState("");
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const initialDatas = await getInitialData();
-      setDatas(initialDatas);
-    };
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const initialDatas = await getInitialData();
+  //     setDatas(initialDatas);
+  //   };
+  //   fetchData();
+  // }, []);
 
   const onDeleteHandler = (id) => {
     setDatas(datas.filter((data) => data.id !== id));
