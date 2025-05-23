@@ -271,19 +271,19 @@ textarea::placeholder {
 }
 
 @media screen and (max-width: 1199px) {
-  .notes-list {
+  .note-list {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media screen and (max-width: 899px) {
-  .notes-list {
+  .note-list {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (max-width: 599px) {
-  .notes-list {
+  .note-list {
     grid-template-columns: 1fr;
   }
 }
