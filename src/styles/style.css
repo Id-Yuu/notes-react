@@ -263,7 +263,7 @@ textarea::placeholder {
   color: #ff5f52;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 400px) {
   .notes-list {
     grid-template-columns: 1fr 1fr;
   }
