@@ -263,23 +263,26 @@ textarea::placeholder {
   color: #ff5f52;
 }
 
-@media only screen and (min-width: 400px) {
-  .notes-list {
-    grid-template-columns: 1fr 1fr;
+@media (max-width: 500px) {
+  .note-input {
+    max-width: 95vw;
+    padding: 0 2vw;
   }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 600px) {
+  .notes-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 900px) {
   .notes-list {
     grid-template-columns: repeat(3, 1fr);
   }
-
-  .note-search input {
-    min-width: 400px;
-  }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1200px) {
   .notes-list {
     grid-template-columns: repeat(4, 1fr);
   }
